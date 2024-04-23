@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05DDD7BE-1BE3-4738-83CF-705A47A9EA37}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>View</RootNamespace>
+    <AssemblyName>View</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dialogs\Drzave\DialogDodajDrzavu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Drzave\DialogDodajDrzavu.Designer.cs">
+      <DependentUpon>DialogDodajDrzavu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Igraci\DialogDetaljiOIgracu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Igraci\DialogDetaljiOIgracu.Designer.cs">
+      <DependentUpon>DialogDetaljiOIgracu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Igraci\DialogKreirajIgraca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Igraci\DialogKreirajIgraca.Designer.cs">
+      <DependentUpon>DialogKreirajIgraca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Igraci\DialogNapadaciTima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Igraci\DialogNapadaciTima.Designer.cs">
+      <DependentUpon>DialogNapadaciTima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Timovi\DialogDetaljiOTimu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Timovi\DialogDetaljiOTimu.Designer.cs">
+      <DependentUpon>DialogDetaljiOTimu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Timovi\DialogKreirajTim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Timovi\DialogKreirajTim.Designer.cs">
+      <DependentUpon>DialogKreirajTim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Timovi\DialogUtakmiceTima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Timovi\DialogUtakmiceTima.Designer.cs">
+      <DependentUpon>DialogUtakmiceTima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Utakmice\DialogDetaljiOUtakmici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Utakmice\DialogDetaljiOUtakmici.Designer.cs">
+      <DependentUpon>DialogDetaljiOUtakmici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Utakmice\DialogKreirajUtakmicu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Utakmice\DialogKreirajUtakmicu.Designer.cs">
+      <DependentUpon>DialogKreirajUtakmicu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Utakmice\DialogUpdateUtakmicu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Utakmice\DialogUpdateUtakmicu.Designer.cs">
+      <DependentUpon>DialogUpdateUtakmicu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGlavna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGlavna.Designer.cs">
+      <DependentUpon>FrmGlavna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlavniKoordinator.cs" />
+    <Compile Include="Helpers\FormeHelpers.cs" />
+    <Compile Include="Komunikacija\Komunikacija.cs" />
+    <Compile Include="Komunikacija\KomunikacijaKlijent.cs" />
+    <Compile Include="Kontroleri\GlavniKontroler.cs" />
+    <Compile Include="Kontroleri\KontrolerIgrac.cs" />
+    <Compile Include="Kontroleri\KontrolerListaStrelaca.cs" />
+    <Compile Include="Kontroleri\KontrolerPrijavljivanje.cs" />
+    <Compile Include="Kontroleri\KontrolerRezultati.cs" />
+    <Compile Include="Kontroleri\KontrolerTabela.cs" />
+    <Compile Include="Kontroleri\KontrolerTimovi.cs" />
+    <Compile Include="Kontroleri\KontrolerRaspored.cs" />
+    <Compile Include="Kontroleri\VratiSvetimoveKontroler.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\UCGlavna.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCGlavna.Designer.cs">
+      <DependentUpon>UCGlavna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCIgraci.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCIgraci.Designer.cs">
+      <DependentUpon>UCIgraci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCListaStrelaca.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCListaStrelaca.Designer.cs">
+      <DependentUpon>UCListaStrelaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCRezultati.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCRezultati.Designer.cs">
+      <DependentUpon>UCRezultati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCTabela.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCTabela.Designer.cs">
+      <DependentUpon>UCTabela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCTimovi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCTimovi.Designer.cs">
+      <DependentUpon>UCTimovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCRaspored.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCRaspored.Designer.cs">
+      <DependentUpon>UCRaspored.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dialogs\Drzave\DialogDodajDrzavu.resx">
+      <DependentUpon>DialogDodajDrzavu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Igraci\DialogDetaljiOIgracu.resx">
+      <DependentUpon>DialogDetaljiOIgracu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Igraci\DialogKreirajIgraca.resx">
+      <DependentUpon>DialogKreirajIgraca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Igraci\DialogNapadaciTima.resx">
+      <DependentUpon>DialogNapadaciTima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Timovi\DialogDetaljiOTimu.resx">
+      <DependentUpon>DialogDetaljiOTimu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Timovi\DialogKreirajTim.resx">
+      <DependentUpon>DialogKreirajTim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Timovi\DialogUtakmiceTima.resx">
+      <DependentUpon>DialogUtakmiceTima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Utakmice\DialogDetaljiOUtakmici.resx">
+      <DependentUpon>DialogDetaljiOUtakmici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Utakmice\DialogKreirajUtakmicu.resx">
+      <DependentUpon>DialogKreirajUtakmicu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Utakmice\DialogUpdateUtakmicu.resx">
+      <DependentUpon>DialogUpdateUtakmicu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGlavna.resx">
+      <DependentUpon>FrmGlavna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\UCGlavna.resx">
+      <DependentUpon>UCGlavna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCIgraci.resx">
+      <DependentUpon>UCIgraci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCListaStrelaca.resx">
+      <DependentUpon>UCListaStrelaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCRezultati.resx">
+      <DependentUpon>UCRezultati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCTabela.resx">
+      <DependentUpon>UCTabela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCTimovi.resx">
+      <DependentUpon>UCTimovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCRaspored.resx">
+      <DependentUpon>UCRaspored.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Domen.StatistikaIgraca.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domen\Domen.csproj">
+      <Project>{EB9C67D7-CE13-4E9A-9AAC-F250D7AC7409}</Project>
+      <Name>Domen</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zajednicki\Zajednicki.csproj">
+      <Project>{706AC7AD-2B05-4A7E-8E4E-13D4839441AB}</Project>
+      <Name>Zajednicki</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sport_football_1517.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\najmanja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\srednja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\najveca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
